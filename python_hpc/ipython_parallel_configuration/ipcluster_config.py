@@ -13,7 +13,7 @@ c.IPClusterEngines.engine_launcher_class = 'PBSEngineSetLauncher'
 
 import os.path
 home_folder = os.path.expanduser('~') 
-c.PBSEngineSetLauncher.batch_template_file = home_folder + '/workshop/python_hpc/slurm.engine.template'
+c.PBSEngineSetLauncher.batch_template_file = home_folder + '/.ipython/profile_default/slurm.engine.template'
 
 # The PBS submit command ['qsub']
 c.PBSEngineSetLauncher.submit_command = ['sbatch']

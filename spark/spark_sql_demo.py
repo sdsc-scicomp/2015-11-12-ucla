@@ -27,6 +27,8 @@ df.describe()
 
 df.filter(df.year > 0).filter(df.song_hotttnesss >0).show(20)
 
+# Exercise, find count by year
+
 df.filter(df.year > 0).filter(df.song_hotttnesss >0).groupby("year").count().show(100)
 
 df_valid = df.filter(df.year > 0).filter(df.song_hotttnesss >0)

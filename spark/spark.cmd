@@ -9,7 +9,7 @@
 #SBATCH --nodes=2
 #SBATCH --ntasks-per-node=24
 #SBATCH --export=ALL
-#SBATCH -t 00:20:00
+#SBATCH -t 02:00:00
 
 ### Environment setup for Hadoop and Spark
 export MODULEPATH=$MODULEPATH:/share/apps/compute/modulefiles/applications

@@ -1,0 +1,14 @@
+#!/bin/bash
+#SBATCH --job-name="CUDA"
+#SBATCH --output="CUDA.%j.%N.out"
+#SBATCH --partition=gpu
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=24
+#SBATCH --gres=gpu:4
+#SBATCH -t 00:10:00
+
+#Uncomment for detailed output
+module load cuda
+#Run the job
+export CUDA_VISIBLE_DEVICES=0,1
+./simpleP2P
